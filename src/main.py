@@ -40,6 +40,7 @@ def contact():
         email = request.form['email']
         message = request.form['message']
         return redirect(url_for('contact'))
+
     return render_template('contact.html', form=form)
 
 
